@@ -36,10 +36,7 @@ computed: {
 }
 </script>
 
-<style>
-#carousel-con{
-  border: solid;
-}
+<style scoped>
 #click {
     width: 5%;
 }

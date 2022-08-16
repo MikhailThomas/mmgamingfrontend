@@ -146,6 +146,7 @@ cards.forEach(card => card.addEventListener('click', transition));
 }
 
 .new-card {
+  border: hidden;
   border-radius: 10px;
   transition: 0.44s;
   text-align: center;
@@ -156,6 +157,11 @@ cards.forEach(card => card.addEventListener('click', transition));
 .card {
   transition: 0.44s linear;
   color: black;
+  background-color: rgba(0, 0, 0, 0.444);
+}
+.card:hover{
+  transform: scale(1.07) skewY(0deg);
+  transition: 0.44s linear;
 }
 
 .img-fluid{
@@ -167,7 +173,7 @@ img:hover{
   border-radius: 40px;
   transform: scale(1.07) skewY(0deg);
   transition: 0.44s linear;
-  color: blue;
+  color: #03e9f4;
 }
 
 .card {
@@ -175,22 +181,35 @@ img:hover{
   border: none;
 }
 
+.image{
+  margin: auto;
+}
 div.image {
   background-color: #dadce2;
   background-position: center;
   background-size: cover;
   overflow-x: hidden;
   object-fit: contain;
-  border-radius: 30px;
-  border: solid;
-  
 }
 
-h2 {
+.btn{
+  color: #ffffff;;
+}
+
+h2, h3 {
   text-align: center;
+  color: #03e9f4;
+}
+h3{
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 .info{
-  margin-top: 30px;
+  margin-top: 30px
+}
+
+a{
+  text-decoration: none;
 }
 </style>
